@@ -23,7 +23,7 @@ node("linux") {
                 url: '',
                 credentialsId: 'dockerhub.cheisr'
                 ]){       
-            app.push("latest")
+            app.push()
         }
     }
 }
