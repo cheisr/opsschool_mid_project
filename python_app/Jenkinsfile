@@ -1,4 +1,4 @@
-snode("linux") {
+node("linux") {
     def app
 
     stage('Clone repository') {
