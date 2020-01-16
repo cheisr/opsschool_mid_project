@@ -11,7 +11,8 @@ node("linux") {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("cheisr/os_project", "python_app/").withRun('-p 8080:5000')
+        app = docker.build("cheisr/os_project", "python_app/")
+        app.withRun('-p 8080:5000'){sh 'curl localhost:8080'}
     }
 
     stage('Push image') {         
