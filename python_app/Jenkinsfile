@@ -23,7 +23,6 @@ node("linux") {
                 url: 'https://hub.docker.com/',
                 credentialsId: 'dockerhub.cheisr'
                 ]){       
-            app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
     }
