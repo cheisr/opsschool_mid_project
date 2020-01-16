@@ -11,7 +11,7 @@ node("linux") {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("cheisr/os_project")
+        app = docker.build("python_app/Dockerfile")
     }
 
     stage('Test image') {
