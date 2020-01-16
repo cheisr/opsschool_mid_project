@@ -1,4 +1,4 @@
-node("linux") {
+snode("linux") {
     def app
 
     stage('Clone repository') {
@@ -11,7 +11,7 @@ node("linux") {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("os_project", "python_app/")
+        app = docker.build("cheisr", "python_app/")
 /*    }                 */
 
 /*    stage('Push image') {         */
