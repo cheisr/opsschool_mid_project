@@ -15,7 +15,7 @@ node("linux") {
     }
     
     stage('Test container') {
-        app.withRun('-p 8080:5000'){sh "curl -s 127.0.0.1:8080"}
+        app.withRun("-p 8080:5000"){sh "curl 127.0.0.1:8080"}
     }
 
     stage('Push image') {         
