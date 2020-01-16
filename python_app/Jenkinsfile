@@ -20,7 +20,7 @@ node("linux") {
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
         withDockerRegistry(registry:[
-                url: 'https://hub.docker.com/',
+                url: '',
                 credentialsId: 'dockerhub.cheisr'
                 ]){       
             app.push("latest")
