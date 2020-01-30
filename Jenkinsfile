@@ -17,7 +17,7 @@ node("linux") {
    stage('Push image') {
        withDockerRegistry(registry:[
                url: '',
-               credentialsId: 'dockerhub.cheisr'
+               credentialsId: 'dockerhub'
                ]){
            app.push()
        }
