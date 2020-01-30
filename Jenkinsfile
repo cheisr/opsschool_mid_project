@@ -5,7 +5,7 @@ node("linux") {
    }
 
    stage('Build image') {
-       app = docker.build("cheisr/os_project", "python_app/")
+       app = docker.build("cheisr/opsschool_project", "python_app/")
    }
 
    stage('Test container') {
